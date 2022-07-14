@@ -1,0 +1,24 @@
+{
+    "name": "org/core",
+    "description": "The core module",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Org\\Core\\": "src"
+        }
+    },
+    "require": {
+        "barryvdh/laravel-dompdf": "^2.0",
+        "mews/purifier": "^3.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Org\\Core\\Providers\\CoreServiceProvider"
+            ],
+            "aliases": {
+                "Core": "Org\\Core\\Facades\\CoreFacade"
+            }
+        }
+    }
+}
