@@ -2360,11 +2360,11 @@
         },
         {
             "name": "org/core",
-            "version": "9.x-dev",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./packages/core",
-                "reference": "41cd70c71750384461908064f43fdba92b498cf8"
+                "reference": "be1412073b58b662f95417f0cfc93a4764f00462"
             },
             "require": {
                 "barryvdh/laravel-dompdf": "^2.0",
@@ -2383,7 +2383,8 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Org\\Core\\": "src"
+                    "Org\\Core\\": "src",
+                    "Org\\Core\\Tests\\": "tests"
                 }
             },
             "description": "The core module",
