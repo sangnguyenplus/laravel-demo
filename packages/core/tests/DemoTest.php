@@ -11,7 +11,7 @@ class DemoTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
+    public function exampleTest(): void
     {
         $response = $this->get('/demo2');
 
