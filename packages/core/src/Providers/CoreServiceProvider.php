@@ -24,8 +24,12 @@ class CoreServiceProvider extends ServiceProvider
         $this->app->singleton(ExceptionHandler::class, CustomHandlerException::class);
     }
 
+    // packages/core/src/Providers/CoreServiceProvider.php
     public function boot()
     {
+        // NOTE: Load migrations from path
+        $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
+
         // NOTE: Load routes, you can load many route files as you wish.
         $this->loadRoutesFrom(__DIR__ . '/../../routes/web.php');
 
